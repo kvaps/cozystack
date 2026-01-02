@@ -1,1 +1,5 @@
 # Platform configuration is managed by cozystack-operator
+
+migrations:
+  image: ghcr.io/cozystack/cozystack/platform-migrations:latest
+  targetVersion: 22
