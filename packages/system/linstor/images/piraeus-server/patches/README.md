@@ -12,3 +12,6 @@ Custom patches for piraeus-server (linstor-server) v1.32.3.
   - Upstream: [#476](https://github.com/LINBIT/linstor-server/pull/476) (superseded by this expanded fix)
 - **skip-adjust-when-device-inaccessible.diff** — Fix resources stuck in StandAlone after reboot, Unknown state race condition, and encrypted resource deletion
   - Upstream: [#477](https://github.com/LINBIT/linstor-server/pull/477)
+- **retry-adjust-after-stale-bitmap.diff** — Retry `drbdadm adjust` after detaching a stale local bitmap state
+  - Upstream: [#491](https://github.com/LINBIT/linstor-server/pull/491)
+  - Backported from commit: [`51ae50a84`](https://github.com/kvaps/linstor-server/commit/51ae50a84dcb98093f543b819652c750a94d96c9)
